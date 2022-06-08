@@ -7,7 +7,7 @@ export default () => (
     <Box sx={{ flexDirection: "row" }}>
       <h1 className="h1">
         <CurrencyBitcoinIcon />
-        Crawl Tool
+        Crawl Crypto Tool
       </h1>
     </Box>
   </>

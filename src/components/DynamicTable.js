@@ -135,50 +135,6 @@ export default function DynamicTable() {
     </Box>
   ) : (
     <>
-      {/* <TableContainer component={Paper}>
-        <Table aria-label="simple table" stickyHeader>
-          <TableHead>
-            <TableRow>
-              <TableCell>NO</TableCell>
-              <TableCell align="center">NETWORK</TableCell>
-              <TableCell align="center">SYMBOL</TableCell>
-              <TableCell align="left">SOURCE</TableCell>
-              <TableCell align="right" onClick={handleSortRequest}>
-                <TableSortLabel active={true} direction={orderDirection}>
-                  SUPPLY&nbsp;(TOKEN)
-                </TableSortLabel>
-              </TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {currencies.map((row, index) => (
-              <TableRow key={index}>
-                <TableCell component="th" scope="row">
-                  {index + 1}
-                </TableCell>
-                <TableCell align="center">{row.network}</TableCell>
-                <TableCell align="center">{row.symbol}</TableCell>
-                <TableCell align="left">
-                  <a
-                    href={row.source}
-                    target="_blank"
-                    style={{ color: "white" }}
-                  >
-                    {row.source}
-                  </a>
-                </TableCell>
-                <TableCell align="right">
-                  <NumberFormat
-                    displayType={"text"}
-                    thousandSeparator={true}
-                    value={(parseInt(row.supply) / 1000000).toFixed(2)}
-                  />
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer> */}
       <CacheProvider value={muiCache}>
         <MUIDataTable data={currencies} columns={columns} options={options} />
       </CacheProvider>
