@@ -116,7 +116,7 @@ export default function DynamicTable() {
   useEffect(() => {
     setLoading(true);
     const endpoint =
-      "https://ij57xwsjvsos3rcyvj5gqkynwm0bonwo.lambda-url.ap-southeast-1.on.aws/";
+      "https://gjy4rfp7ik2vws5qqltinzarva0vmota.lambda-url.ap-southeast-1.on.aws/";
     axios
       .get(endpoint)
       .then((res) => {
